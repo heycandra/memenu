@@ -1,0 +1,30 @@
+/*
+=========================================================
+* MeMenu - Mega Menu in Bootstrap v5
+=========================================================
+* Product Page: https://candrawaskito.com
+* Copyright 2024 Candra Waskito (https://candrawaskito.com/)
+* Designed and coded by https://candrawaskito.com
+========================================================= */
+
+// Inter Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// Bootstrap functions
+@import "../../../node_modules/bootstrap/scss/functions";
+
+// User Variables
+@import "user-variables";
+
+// theme variables
+@import "variables";
+@import "variables-dark";
+
+//utilities
+@import "utilities";
+
+// Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// User
+@import "user";

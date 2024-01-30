@@ -1,0 +1,15 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $var in $spacers {
+            .space-x#{$infix}-#{$key} > * + * {
+                margin-left: #{$var} !important;
+            }
+
+            .space-y#{$infix}-#{$key} > * + * {
+                margin-top: #{$var} !important;
+            }
+        }
+    }
+}

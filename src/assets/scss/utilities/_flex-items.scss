@@ -1,0 +1,16 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        $flex-items: ( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+        @each $key, $var in $flex-items {
+            .flex-items#{$infix}-#{$key} {
+                --flex-items: #{$var};
+            }
+            .flex-w#{$infix}-#{$key} {
+                --flex-items: 1;
+                --flex-gap: 1rem;
+                width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
+            }
+        }
+    }
+}

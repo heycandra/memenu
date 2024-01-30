@@ -1,0 +1,82 @@
+// Width
+:root {
+    --nu-w: 100%;
+    --nu-w-md: 100%;
+    --nu-w-lg: 100%;
+    --nu-h: 100%;
+    --nu-h-md: 100%;
+    --nu-h-lg: 100%;
+    --nu-min-w: 100%;
+    --nu-min-w-md: 100%;
+    --nu-min-w-lg: 100%;
+    --nu-min-h: 100%;
+    --nu-min-h-md: 100%;
+    --nu-min-h-lg: 100%;
+    --nu-max-w: 100%;
+    --nu-max-w-md: 100%;
+    --nu-max-w-lg: 100%;
+    --nu-max-h: 100%;
+    --nu-max-h-md: 100%;
+    --nu-max-h-lg: 100%;
+}
+
+.w {
+    width: var(--nu-w);
+}
+.max-w {
+    max-width: var(--nu-max-w);
+}
+.min-w {
+    min-width: var(--nu-min-w);
+}
+.h {
+    height: var(--nu-h);
+}
+.max-h {
+    max-height: var(--nu-max-h);
+}
+.min-h {
+    min-height: var(--nu-min-h);
+}
+
+@include media-breakpoint-up(md) {
+    .w-md {
+        width: var(--nu-w-md) !important;
+    }
+    .max-w-md {
+        max-width: var(--nu-max-w-md) !important;
+    }
+    .min-w-md {
+        min-width: var(--nu-min-w-md) !important;
+    }
+    .h-md {
+        height: var(--nu-h-md) !important;
+    }
+    .max-h-md {
+        max-height: var(--nu-max-h-md) !important;
+    }
+    .min-h-md {
+        min-height: var(--nu-min-h-md) !important;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .w-lg {
+        width: var(--nu-w-lg) !important;
+    }
+    .max-w-lg {
+        max-width: var(--nu-max-w-lg) !important;
+    }
+    .min-w-lg {
+        min-width: var(--nu-min-w-lg) !important;
+    }
+    .h-lg {
+        height: var(--nu-h-lg) !important;
+    }
+    .max-h-lg {
+        max-height: var(--nu-max-h-lg) !important;
+    }
+    .min-h-lg {
+        min-height: var(--nu-min-h-lg) !important;
+    }
+}
