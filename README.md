@@ -5,7 +5,7 @@ MeMenu is Mega menu in Bootstrap version 5
 ```
 npm install gulp-cli -g
 ```
-5. After installing Gulp, run npm install in the main `codebs/` folder to download all the project dependencies. You'll find them in the `node_modules/` folder.
+5. After installing Gulp, run npm install in the main `memenu/` folder to download all the project dependencies. You'll find them in the `node_modules/` folder.
 
 ```
 npm install
